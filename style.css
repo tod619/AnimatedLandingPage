@@ -43,3 +43,25 @@
     color: #eee;
     margin-bottom: 20px;
 }
+
+.banner button {
+    width: 180px;
+    padding: 12px;
+    margin: 20px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-left {
+    background-color: #eee;
+    color: #444;
+}
+
+.btn-right {
+    background-color: transparent;
+    color: #eee;
+}
