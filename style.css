@@ -63,11 +63,15 @@
 .btn-left {
     background-color: #eee;
     color: #444;
+    opacity: 0;
+    animation: animateBtn 1s 1.5s forwards;
 }
 
 .btn-right {
     background-color: transparent;
     color: #eee;
+    opacity: 0;
+    animation: animateBtn 1s 2.3s forwards;
 }
 
 @keyframes moveToLeft {
@@ -91,5 +95,15 @@
     100% {
         transform: translateX(0);
         opacity: 1; 
+    }
+}
+
+@keyframes animateBtn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
