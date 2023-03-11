@@ -13,6 +13,8 @@
     background: linear-gradient(rgba(53, 82, 66, 0.5), rgba(47, 80, 63, 0.6)),
                 url(images/bg.jpg) center no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .banner {
@@ -29,6 +31,7 @@
     color: #ddd;
     font-weight: 300; 
     margin-bottom: 30px;
+    animation: moveToLeft 2s;
 }
 
 .banner span {
@@ -42,6 +45,7 @@
     font-weight: 300;
     color: #eee;
     margin-bottom: 20px;
+    animation: moveToRight 2s;
 }
 
 .banner button {
@@ -64,4 +68,28 @@
 .btn-right {
     background-color: transparent;
     color: #eee;
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
 }
